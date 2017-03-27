@@ -22,11 +22,11 @@ class RandomWord
   end
 
   def position_setup
-    self.word.split(//).map{|c| ""}
+    word.chars.map{|c| ""}
   end
 
   def contains? (answer_array)
-    gamesword = Set.new(word.scan(/./))
+    gamesword = Set.new(word.chars))
     playerinput = Set.new(answer_array)
     gamesword.sort == playerinput.sort
   end
