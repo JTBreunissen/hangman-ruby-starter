@@ -26,7 +26,7 @@ class RandomWord
   end
 
   def contains? (answer_array)
-    gamesword = Set.new(word.chars))
+    gamesword = Set.new(word.scan(/./))
     playerinput = Set.new(answer_array)
     gamesword.sort == playerinput.sort
   end
