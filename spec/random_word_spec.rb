@@ -16,4 +16,6 @@ RSpec.describe RandomWord do
       expect(random_word.positions_for(characters: ["e"])).to eq(["", "", "", "e", "", "", "e", ""])
     end
   end
+
+  
 end
